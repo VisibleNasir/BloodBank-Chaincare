@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #8b0000; /* Dark Red */
+    background-color: #cc0003; /* Dark Red */
     padding: 20px;
     text-align: center;
 }
@@ -45,7 +45,7 @@ header ul li a:hover {
 }
 
 .hero {
-    background-color: #b22222;
+    background-image: url(src/image.png);
     color: #fff;
     padding: 100px 20px;
     text-align: center;
