@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #fff;
+}
+
+header {
+    background-color: #ff0000;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #ffcccb; 
+}
+
+.hero {
+    background-image: url(src/image.png);
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px; 
+    text-align: center;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease;
+    margin: 20px;
+}
+
+.card:hover {
+    transform: translateY(-4px); 
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #000000; 
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555; 
+    line-height: 1.5;
+}
+
+.card button {
+    padding: 12px 25px;
+    background-color: #7a99ff; 
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.card button:hover {
+    background-color: rgb(43, 149, 255); 
+}
+
+footer {
+    background-color: #8b0000; /* Dark Red */
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #fff;
+}

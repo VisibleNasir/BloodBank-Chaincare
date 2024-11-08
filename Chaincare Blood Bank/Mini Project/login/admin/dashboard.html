@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Blood Bank Management System</h1>
+            </div>
+        </nav>
+    </header>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <ul>
+                <li onclick="showSection('dashboard')">Home</li>
+                <li onclick="showSection('donors')">Donor</li>
+                <li onclick="showSection('patients')">Patients</li>
+                <li onclick="showSection('donations')">Donations</li>
+                <li onclick="showSection('requests')">Blood Requests</li>
+                <li onclick="showSection('requestHistory')">Request History</li>
+                <li onclick="showSection('bloodStocks')">Blood Stocks</li>
+            </ul>
+        </nav>
+
+        <!-- Main content area -->
+        <div class="content">
+            
+            <!-- Dashboard Overview Section -->
+            <section id="dashboard" class="section">
+                <div class="dashboard-metrics">
+                    <div class="metric-card" id="totalDonors">
+                        <h2>Total Donors</h2>
+                        <p>0</p>
+                    </div>
+                    <div class="metric-card" id="totalRequests">
+                        <h2>Total Requests</h2>
+                        <p>0</p>
+                    </div>
+                    <div class="metric-card" id="approvedRequests">
+                        <h2>Approved Requests</h2>
+                        <p>0</p>
+                    </div>
+                    <div class="metric-card" id="totalBloodUnits">
+                        <h2>Total Blood Units</h2>
+                        <p>0</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Donor Data Section -->
+            <section id="donors" class="section hidden">
+                <h2>Donor Data</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Blood Type</th>
+                            <th>Units Donated</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="donorTableBody">
+                        <!-- JavaScript will insert donor data here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Placeholder sections for other menu items -->
+            <section id="patients" class="section hidden">
+                <h2>Patients</h2>
+                <!-- Content for patients will go here -->
+            </section>
+
+            <section id="donations" class="section hidden">
+                <h2>Donations</h2>
+                <!-- Content for donations will go here -->
+            </section>
+
+            <section id="requests" class="section hidden">
+                <h2>Blood Requests</h2>
+                <!-- Content for blood requests will go here -->
+            </section>
+
+            <section id="requestHistory" class="section hidden">
+                <h2>Request History</h2>
+                <!-- Content for request history will go here -->
+            </section>
+
+            <section id="bloodStocks" class="section hidden">
+                <h2>Blood Stocks</h2>
+                <!-- Content for blood stocks will go here -->
+            </section>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

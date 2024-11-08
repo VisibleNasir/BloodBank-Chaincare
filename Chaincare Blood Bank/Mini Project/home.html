@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaincare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Chaincare</h1>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login/Donor/Donorlogin.html">Donor</a></li>
+                <li><a href="#patient">Patient</a></li>
+                <li><a href="login/admin/adminlogin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Blood Bank System</h2>
+        <p>“Opportunities knock the door sometimes, so don’t let it go and donate blood.”</p>
+    </section>
+
+    <section class="info">
+        <div class="card" id="donor">
+            <h3>Become a Donor</h3>
+            <p>Your donation can save lives.</p>
+            <button onclick="window.location.href='donor.html'">Register as Donor</button>
+        </div>
+        <div class="card" id="patient">
+            <h3>Patient</h3>
+            <p>Request blood when in need</p>
+            <button onclick="window.location.href='patient.html'">Request Blood</button>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Blood Bank System - Chaincare | All Rights Reserved</p>
+    </footer>
+
+    <script src="donor.js"></script>
+</body>
+</html>
